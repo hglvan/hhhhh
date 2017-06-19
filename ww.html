@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+
+<body>
+    <div className="all">
+        <div className="login_header">
+            <span className="login_l"> </span>
+            <span className="login_vip"> 会员注册 </span>
+            <span> </span>
+        </div>
+        <div className="register_content">
+            <ul className="oul">
+                <li>
+                    <span> 手机号码 </span>
+                    <input type="text" placeholder="请输入您的手机号码" ref="hg" onInput={ this.showclose.bind(this)} className="plonenum" />
+                    <i className="iconfont icon-cuo gb plone">
+                        </i>
+                </li>
+                <li>
+                    <span className="ps"> 验证码
+                                        </span>
+                    <input type="text" placeholder="请输入验证码" className="yzm" ref='yzm' onInput={ this.showclose.bind(this)}/>
+                    <i className="code" onClick={ this.getcode}> 67687 </i>
+                </li>
+                <li>
+                    <span> 短信校验码
+                        </span>
+                    <input type="text" className="jj" ref='yzms' placeholder="请输入校验码" onInput={ this.showclose.bind(this)}/>
+                    <i className="jym"> 获取校验码
+                                </i>
+                </li>
+                <li>
+                <input type="text">
+                    <span> 设置密码 </span>
+                    <input type="password" placeholder="请输入6-20位密码" ref="psw" onInput={ this.showclose.bind(this) } />
+                    <i className="iconfont icon-cuo gb psw"> </i>
+                </li>
+                <li>
+                    <span> 确认密码 </span>
+                    <input type="password" placeholder="再次输入密码" ref="psws" onInput={ this.showclose.bind(this) } />
+                    <i className="iconfont icon-cuo gb psws"> </i>
+                </li>
+                <li className="gl ts">
+                </li>
+                <li className="gl">
+                    <div className="register_btn" onClick={ this.ajax.bind(this) }>注册 </div>
+                </li>
+            </ul>
+        </div>
+        <div className="login_footer">
+            <span className="dd">
+                </span><span>同意</span> <a>《迷你零食用户注册协议》</a> </div>
+    </div>
+</body>
+
+</html>
